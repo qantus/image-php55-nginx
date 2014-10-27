@@ -1,0 +1,7 @@
+template mimi-php55
+
+run DEBIAN_FRONTEND=noninteractive apt-get install -yq nginx php5-fpm
+run apt-get clean
+add etc/nginx/nginx.conf /etc/nginx/nginx.conf
+add etc/nginx/sites-available/default /etc/nginx/sites-available/default
+add etc/php5/fpm/pool.d/www.conf /etc/php5/fpm/pool.d/www.conf
