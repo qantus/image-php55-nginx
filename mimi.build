@@ -6,6 +6,7 @@ run update-rc.d -f apache2 remove
 run apt-get clean
 add etc/nginx/nginx.conf /etc/nginx/nginx.conf
 add etc/nginx/sites-available/default /etc/nginx/sites-available/default
+add etc/php5/cli/php.ini /etc/php5/cli/php.ini
 add etc/php5/fpm/pool.d/www.conf /etc/php5/fpm/pool.d/www.conf
 run mkdir -p /home/user/app/www
 run mkdir -p /home/user/app/tmp
